@@ -1,5 +1,5 @@
 /** Bitser Serializable Data Type */
-type Serializable<T> = Exclude<T, Function | LuaThread | LuaUserdata> | Serializable<T>[] | {[index: string | number]: Serializable<T>}
+type Serializable<T> = Exclude<T, Function | LuaThread | LuaUserdata> | Serializable<T>[] | {[index: string]: Serializable<T>}
 
 /** @noResolution */
 declare module "bitser" {
