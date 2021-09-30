@@ -98,7 +98,7 @@ declare module "bitser" {
         function registerClass<ClassType>(
             name: string,
             the_class: ClassType,
-            classkey: string,
+            classkey: keyof ClassType,
             deserializer: <ObjectType>(this: void, obj: Serializable<ObjectType>, the_class: ClassType) => ClassType & ObjectType
         ): ClassType
 
