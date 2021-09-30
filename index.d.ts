@@ -99,7 +99,7 @@ declare module "bitser" {
             name: string,
             the_class: ClassType,
             classkey: keyof ClassType,
-            deserializer: <ObjectType>(this: void, obj: Serializable<ObjectType>, the_class: ClassType) => ClassType & ObjectType
+            deserializer: <ObjectType>(this: void, obj: Serializable<ObjectType>, the_class: ClassType) => ClassType
         ): ClassType
 
         /**
