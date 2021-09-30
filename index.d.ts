@@ -9,6 +9,7 @@ declare module "bitser" {
      * @link https://github.com/gvx/bitser
      * @version 1.1
      * @author gvx
+     * @license ISC
      */
     namespace bitser {
         /**
