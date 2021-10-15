@@ -1,8 +1,8 @@
-/** Bitser Serializable Data Type */
-type Serializable<T> = Exclude<T, Function | LuaThread | LuaUserdata> | Serializable<T>[] | {[index: string]: Serializable<T>}
-
 /** @noResolution */
 declare module "bitser" {
+    /** Bitser Serializable Data Type */
+    type Serializable<T> = Exclude<T, Function | LuaThread | LuaUserdata> | Serializable<T>[] | {[index: string]: Serializable<T>}
+
     /**
      * bitser
      * @description Serializes and deserializes Lua values with LuaJIT
